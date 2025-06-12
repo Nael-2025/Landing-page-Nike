@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing-page Nike</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-teg">
+            <a href="#"><img src="img/logo.png" alt="logo Nike" class="logo"></a>
+            <ul>
+                <li><a href="#" class="check">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circulo"></div>
+
+            <div class="texto-div">
+                <h1>Seu Treino Mudou, Seu Tênis Também.</h1>
+
+                <h3>Nike Treino: Potência nos Pés. Foco na Meta.</h3>
+                <p>Projetado para quem leva o treino a sério, o novo Nike Air Max 220M é a fusão perfeita entre estabilidade, conforto e estilo.</p>
+                <h6>A partir de R$ 250.00</h6>
+
+                <a href="#" class="btn">Comprar</a>
+
+                <div class="txt">
+                    <h5>Escolha sua cor favorita.</h5>
+                </div>
+
+                <div class="cor">
+                    <span id="verde" onclick="MudarTenis('img/nike1.png'); MudarCirculo('#008000') "></span>
+                    <span id="azul" onclick="MudarTenis('img/nike2.png'); MudarCirculo('#000080')"></span>
+                    <span id="roza" onclick="MudarTenis('img/nike3.png'); MudarCirculo('#FF00FF')"></span>
+                </div>
+            </div>
+            
+            <div class="div-img">
+                <img src="img/nike1.png" alt="nike image" class="Tenis">
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

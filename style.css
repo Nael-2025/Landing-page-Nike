@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --preto: #333;
+    --branco: #ffff;
+    --cinsa: #ccc;
+    --cinsa2: #888;
+    --cinsa3: #999;
+    --preto3: #4444;
+    --preto2: #1d1d1d;
+}
+header {
+    background: var(--preto2);
+    padding: 20px 70px;
+}
+.nav-teg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 90px;
+}
+.nav-teg ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.nav-teg ul li a {
+    color: var(--cinsa2);
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*
+.check {
+    color: var(--branco);
+    border-bottom:  1px solid var(--branco);
+}
+*/
+.nav-teg ul li a:hover {
+    color: var(--branco);
+    border-bottom:  1px solid var(--branco);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+
+    position: fixed;
+    
+}
+.texto-div h1{
+    font-size: 3.5rem;
+}
+.texto-div h3 {
+    font-size: 1.5rem;
+}
+.texto-div p {
+    margin: 10px 0;
+}
+.texto-div h6 {
+    color: var(--cinsa3);
+    font-size: 17px;
+    margin: 20px 0;
+}
+.btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: var(--branco);
+    background: #323232;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.txt h5 {
+    color: var(--preto);
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.cor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cor span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px var(--cinsa2);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cor span:hover {
+    opacity: 0.80;
+}
+
+#verde {
+    background: #008000;
+}
+#azul {
+    background: #000080;
+}
+#roza {
+    background: #FF00FF;
+}
+
+.div-img {
+    transition: all 0.1s ease;
+    z-index: 100;
+}
+.div-img img {
+    margin-left: 20px;
+    transform: rotate(-30deg);
+}
+
+
+.circulo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(950px at right 1000px);
+    background: #008000;
+}
